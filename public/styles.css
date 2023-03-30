@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+    font-family: 'Permanent Marker', cursive;
+    background: linear-gradient(45deg, black, #05365e);
+    background-size: 150% 150%;
+    animation: background-animation 10s ease infinite;
+    width: 100vw;
+    height: 100vh;
+}
+h4, h5{
+    padding: 0;
+    margin: 0;
+    margin-left: 5px;
+}
+
+.Wrapper{
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#TEMP{
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+
+#SEARCH {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+#SUBMIT{
+    /* border-left: solid 1px #05365e; */
+    border-radius: 15px;
+}
+
+#SUBMIT:hover{
+    background-color: #ABD9FF;
+    transition:  all 0.4s ease-in-out;
+}
+
+#LOCATION{
+    /* border-right: solid 1px #05365e; */
+    border-radius: 15px 0 0 15px;
+    position: relative;
+    bottom: 3px;
+}
+
+#SEARCH img{
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+    margin: 0;
+    background-color: white;
+}
+
+#SEARCH input{
+    padding: 5px;
+    background-color: white;
+    height: 30px;
+    border: none;
+    margin: 0;
+    font-size: 20px;
+    width: 210px;
+}
+
+#SEARCH input:focus{
+    outline: none;
+}
+
+.flex{
+    display: flex;
+    justify-content:space-between
+}
+
+
+#STATS div{
+    align-items: center;
+    justify-content: center;
+}
+#STATS div img{
+    width: 40px;
+    height: 40px;
+    padding-right: 5px;
+}
+
+#MAINIMG{
+    width: 250px;
+    height: 250px;
+}
+
+#STATUS{
+    padding-bottom: 20px;
+}
+
+#FAIL{
+    display: none;
+}
+#SUCCESS{
+    display: none;
+}
+
+#FAIL img{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    right: 30px;
+}
+
+.content{
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+@keyframes background-animation{
+    0%{
+        background-position: 0 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0 50%;
+    }
+}

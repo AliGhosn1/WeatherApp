@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whether App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="Wrapper">
+        <div id="SEARCH">
+            <img id="LOCATION" src="images/pin.png" alt="">
+            <input type="text" id="City" name="CityName" placeholder="Enter a location" autocomplete="off">
+            <img id="SUBMIT" src="images/search.png" alt="">
+        </div>
+
+        <div id="SUCCESS">
+            <img src="images/water.png" id="MAINIMG" alt="">
+            <h3 ID="TEMP">Temp</h3>
+            <h4 ID="STATUS">Rain</h4>
+            <div id="STATS" class="flex">
+                <div id="WINDSPEED" class="flex">
+                    <img src="images/wind.png" alt=""> 
+                    <div class="content">
+                        <h4>0</h4> 
+                        <h5>Wind Speed</h5>
+                    </div>    
+                </div>
+                <div id="HUMIDITY" class="flex">
+                    <img id="HUMID" src="images/water.png" alt=""> 
+                    <div class="content">
+                        <h4>0</h4> 
+                        <h5>Humidity</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="FAIL">
+            <img src="https://media1.giphy.com/media/5ocll6QK7tcFI2q0uG/giphy.gif?cid=ecf05e47vluxtkit4lxv567lovpqyzks40q4qudk09r3n230&rid=giphy.gif&ct=s" alt="">
+            <h3>Sorry, the locatin you searched for was not found</h3>
+        </div>
+
+    </div>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
